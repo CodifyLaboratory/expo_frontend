@@ -221,7 +221,16 @@
 }
 .tourism__slider {
   display: flex;
+  
 }
 
 /*  //tourist  */
 
+.bg__slider {
+  .slick-prev, .slick-next {
+    position: absolute;
+    top: -10000px;
+    left: -10000px;
+    opacity: 0;
+  }
+}

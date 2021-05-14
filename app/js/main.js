@@ -34,14 +34,33 @@ if ($slider.length) {
   });
 }
 
+$(".hero__right-slider .slick-prev").on("click", function () {
+  $(".bg__slider, .slick-prev").click();
+});
+$(".hero__right-slider .slick-next").on("click", function () {
+  $(".bg__slider, .slick-next").click();
+});
+
+// (function () {
+//   $(".hero__right-slider .slick-prev").on("click", function () {
+//     $(".bg__slider, .slick-prev").click();
+//   });
+// })()(
+//   (function () {
+//     $(".hero__right-slider .slick-next").on("click", function () {
+//       $(".bg__slider, .slick-next").click();
+//     });
+//   })()
+// );
+
 $(".bg__slider").slick({
-  arrows: false,
-  draggable: false,
-  swipe: false,
+  arrows: true,
+  draggable: true,
+  swipe: true,
 });
 
 $(".tourism__slider").slick({
   slidesToShow: 4,
   infinite: true,
-  arrows: true
+  arrows: true,
 });
