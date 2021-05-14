@@ -1,7 +1,227 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
 
+.bg__slider {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    position: relative;
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    margin-right: 42px;
+  }
+  &__list-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__list-item_active {
+    border-bottom: 2px solid #f2c94c;
+  }
+}
+.header__hero {
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    min-height: 371px;
+    padding-bottom: 52px;
+  }
+}
+.hero__left-slider {
+  max-width: 522px;
+  width: 100%;
+}
+.line {
+  width: 38px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.left__slider {
+  &-country {
+    margin: 16px 0px;
+    font-weight: 400;
+  }
+  &-place {
+    font-weight: normal;
+    margin-bottom: 16px;
+    font-size: 72px;
+    line-height: 88px;
+  }
+  &-description {
+    margin-bottom: 40px;
+  }
+  &-btns {
+    display: flex;
+  }
+  &-qr {
+    display: flex;
+    max-width: 330px;
+    width: 100%;
+    margin-top: 70px;
+    align-items: center;
+  }
+}
+.qr-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 24px;
+}
+.bookmarks-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #f2c94c;
+  position: relative;
+  margin-right: 24px;
+  cursor: pointer;
+  & img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.btn {
+  color: #000;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  width: 199px;
+  font-weight: 400;
+  text-align: center;
+}
+.slick-track {
+  display: flex;
+  justify-content: flex-start;
+}
+.hero__right-slider {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  & .slick-list {
+    width: 889px;
+    order: -1;
+  }
+  & .slick-arrow {
+    position: absolute;
+    bottom: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    font-size: 0;
+    outline: none;
+    border: none;
+  }
+  & .slick-prev::after {
+    width: 672px;
+    height: 2px;
+    content: "";
+    background-color: #f2f2f2;
+    position: absolute;
+    left: 147px;
+    top: 50%;
+    border-radius: 20px;
+  }
+  & .slick-next {
+    left: 70px;
+  }
+  & .slick-prev::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 24px;
+    transform: translateX(-50%);
+  }
+  & .slick-next::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 24px;
+    transform: rotate(180deg) translateX(50%);
+  }
+}
+.right__slider {
+  &-item {
+    width: 280px;
+    height: 440px;
+    border-radius: 20px;
+    padding: 263px 100px 40px 24px;
+  }
+  &-place {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 16px 0;
+  }
+  &-name {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  &-item_sb {
+    background-image: url(../images/snow-leopard.png);
+    background-repeat: no-repeat;
+  }
+  &-item_ik {
+    background-image: url(../images/ik.png);
+    background-repeat: no-repeat;
+  }
+  &-item_skl {
+    background-image: url(../images/songkol-lake.png);
+    background-repeat: no-repeat;
+  }
+  &-item_bur {
+    background-image: url(../images/burana.png);
+    background-repeat: no-repeat;
+    transform: translateY(5px);
+  }
+  &-item_m {
+    margin-left: 10px;
+  }
+}
+.slider__counter {
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 59px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(7px);
+}
+
+/*  tourist  */
+.wrapper__bg {
+  background-image: url(../images/tourist-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+.tourism__slider {
+  display: flex;
+}
+
+/*  //tourist  */
 
