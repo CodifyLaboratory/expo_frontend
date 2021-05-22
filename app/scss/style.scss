@@ -9,6 +9,14 @@
   width: 100%;
   position: absolute;
 }
+
+.hero__top {
+  background-image: url(../images/hero-top-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+}
 .header {
   &__inner {
     display: flex;
@@ -36,7 +44,6 @@
   }
 }
 .header__hero {
-  padding: 0 100px;
   &-content {
     display: flex;
     justify-content: space-between;
@@ -152,7 +159,7 @@
     background-repeat: no-repeat;
     width: 13px;
     height: 24px;
-    transform: translateX(-50%);
+    transform: translateX(-73%) translateY(3px);
   }
   & .slick-next::before {
     position: absolute;
@@ -161,7 +168,7 @@
     background-repeat: no-repeat;
     width: 13px;
     height: 24px;
-    transform: rotate(180deg) translateX(50%);
+    transform: rotate(180deg) translateX(45%) translateY(-2px);
   }
 }
 .right__slider {
@@ -197,8 +204,9 @@
     background-repeat: no-repeat;
   }
   &-item_bur {
-    background-image: url(../images/burana.png);
+    background-image: url(../images/burana.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     transform: translateY(5px);
   }
   &-item_m {
