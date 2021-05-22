@@ -55,8 +55,8 @@ $(".hero__right-slider .slick-next").on("click", function () {
 
 $(".bg__slider").slick({
   arrows: true,
-  draggable: true,
-  swipe: true,
+  draggable: false,
+  swipe: false,
 });
 
 $(".tourism__slider").slick({

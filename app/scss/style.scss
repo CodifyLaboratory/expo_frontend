@@ -36,6 +36,7 @@
   }
 }
 .header__hero {
+  padding: 0 100px;
   &-content {
     display: flex;
     justify-content: space-between;
@@ -169,6 +170,8 @@
     height: 440px;
     border-radius: 20px;
     padding: 263px 100px 40px 24px;
+    cursor: pointer;
+    color: #fff;
   }
   &-place {
     font-weight: normal;
@@ -219,9 +222,64 @@
   background-size: cover;
   min-height: 100%;
 }
+.tourism__title {
+  max-width: 434px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 78px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  margin-top: 82px;
+}
+.line_big {
+  margin: 0 auto;
+  width: 100px;
+  margin-bottom: 60px;
+}
 .tourism__slider {
   display: flex;
-  
+  align-items: center;
+  & .slick-list {
+    max-width: 1036px;
+    width: 100%;
+  }
+  & .slick-arrow {
+    width: 48px;
+    height: 48px;
+    font-size: 0;
+    outline: none;
+    border: none;
+    background: #F2F2F2;
+    border-radius: 50%;
+  }
+  & .slick-arrow.slick-prev {
+    margin-right: 30px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../images/arrow.svg);
+      background-repeat: no-repeat;
+      transform: translate(-50%, 1px);
+      width: 13px;
+      height: 24px;
+    }
+  }
+  & .slick-arrow.slick-next {
+    margin-left: 40px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../images/arrow.svg);
+      background-repeat: no-repeat;
+      transform: translate(-50%, 1px) rotate(180deg);
+      width: 13px;
+      height: 24px;
+    }
+  }
 }
 
 /*  //tourist  */
