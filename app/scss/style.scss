@@ -16,6 +16,44 @@
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero__top-title {
+  background-image: url(../images/Kyrgyzstan-hero.svg);
+  width: 1017px;
+  height: 150px;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 466.5px;
+}
+
+.hero__top-arrow {
+  background-image: url(../images/hero-top-arrow.svg);
+  width: 64px;
+  height: 37px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: hero__top-arrow;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+
+@keyframes hero__top-arrow {
+  0% {
+    bottom: 64px;
+  }
+  100% {
+    bottom: 5px;
+  }
 }
 .header {
   &__inner {
