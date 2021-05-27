@@ -31,6 +31,8 @@ if ($slider.length) {
   $slider.slick({
     slidesToShow: 3,
     asNavFor: ".hero__left-slider",
+    variableWidth: true,
+    speed: 1500,
   });
 }
 
@@ -56,7 +58,8 @@ $(".hero__right-slider .slick-next").on("click", function () {
 $(".bg__slider").slick({
   arrows: true,
   draggable: false,
-  swipe: false,
+    speed: 1000,
+    swipe: false,
 });
 
 $(".tourism__slider").slick({
