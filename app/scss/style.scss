@@ -296,8 +296,17 @@
   display: flex;
   align-items: center;
   & .slick-list {
-    max-width: 1036px;
+    max-width: 1440px;
     width: 100%;
+    overflow: unset;
+  }
+  & .slick-slide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  & .slick-active{
+    opacity: 1;
+    visibility: visible;
   }
   & .slick-arrow {
     width: 48px;
@@ -333,6 +342,51 @@
       width: 13px;
       height: 24px;
     }
+  }
+  &-item {
+    width: 280px !important;
+    height: 440px;
+    border-radius: 20px;
+    padding: 263px 100px 40px 24px;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 10px;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &-place {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 16px 0;
+  }
+  &-name {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  &-item_sb {
+    background-image: url(../images/snow-leopard.png);
+    background-repeat: no-repeat;
+  }
+  &-item_ik {
+    background-image: url(../images/ik.png);
+    background-repeat: no-repeat;
+  }
+  &-item_skl {
+    background-image: url(../images/songkol-lake.png);
+    background-repeat: no-repeat;
+  }
+  &-item_bur {
+    background-image: url(../images/burana.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(5px);
+    margin-left: 18px;
+  }
+  &-item_m {
+    margin-left: 10px;
   }
 }
 

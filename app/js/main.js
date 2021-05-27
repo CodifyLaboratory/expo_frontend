@@ -63,7 +63,8 @@ $(".bg__slider").slick({
 });
 
 $(".tourism__slider").slick({
-  slidesToShow: 4,
+  slidesToShow: 5,
   infinite: true,
   arrows: true,
+  variableWidth: true,
 });
