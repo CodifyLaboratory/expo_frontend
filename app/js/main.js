@@ -32,7 +32,7 @@ if ($slider.length) {
     slidesToShow: 3,
     asNavFor: ".hero__left-slider",
     variableWidth: true,
-    speed: 1500,
+    speed: 1000,
   });
 }
 
@@ -65,6 +65,20 @@ $(".bg__slider").slick({
 $(".tourism__slider").slick({
   slidesToShow: 5,
   infinite: true,
-  arrows: true,
   variableWidth: true,
+});
+
+$('.nomad__slider').slick({
+  slidesToShow: 3,
+});
+
+$(document).ready(function() {
+  $('.fancybox').fancybox();
+});
+
+$('[data-fancybox]').fancybox({
+  youtube : {
+      controls : 0,
+      showinfo : 0
+  }
 });
